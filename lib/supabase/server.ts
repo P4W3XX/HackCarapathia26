@@ -1,8 +1,5 @@
 import { createClient } from "@supabase/supabase-js"
 
-// Simple server-side Supabase client for Adulting Sandbox.
-// We don't use Supabase Auth — players are tracked via an anonymous
-// cookie-based session id. RLS is disabled on our game tables.
 export function getSupabaseServer() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL
   const key =
